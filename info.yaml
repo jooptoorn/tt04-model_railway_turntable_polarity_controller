@@ -99,24 +99,34 @@ documentation:
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
-    - IN0..IN7: trigger signal to change polarity
-
+    - IN0: "trigger signal to change polarity"
+    - IN1: "trigger signal to change polarity"
+    - IN2: "trigger signal to change polarity"
+    - IN3: "trigger signal to change polarity"
+    - IN4: "trigger signal to change polarity"
+    - IN5: "trigger signal to change polarity"
+    - IN6: "trigger signal to change polarity"
+    - IN7: "trigger signal to change polarity"
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
-    - OUT0, OUT1: counter signal 
-    - OUT2: full bridge control signal for polarity A
-    - OUT3: full bridge control signal for polarity B
-    - OUT4: indicates a polarity switch trigger is active on one of the inputs
-    - OUT5: outputs chip VCC
-    - OUT6: counter enabled signal
-    - OUT7: active error signal
+    - OUT0: "counter signal"
+    - OUT1: "counter signal"
+    - OUT2: "full bridge control signal for polarity A"
+    - OUT3: "full bridge control signal for polarity B"
+    - OUT4: "indicates a polarity switch trigger is active on one of the inputs"
+    - OUT5: "outputs chip VCC"
+    - OUT6: "counter enabled signal"
+    - OUT7: "active error signal"
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
-    - D0: error input. Use to activate an error and disable outputs.
-    - D1..D4: trigger signal to change polarity
-    - D5: not used
-    - D6: oscillator input
-    - D7: oscillator output
+    - D0: "error input. Use to activate an error and disable outputs."
+    - D1: "trigger signal to change polarity"
+    - D2: "trigger signal to change polarity"
+    - D3: "trigger signal to change polarity"
+    - D4: "trigger signal to change polarity"
+    - D5: "not used"
+    - D6: "oscillator input"
+    - D7: "oscillator output"
 
 # The following fields are optional
   tag:          ""      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
