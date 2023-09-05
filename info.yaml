@@ -75,12 +75,12 @@ documentation:
         
         The reset signal removes errors and disables the counter and bridge driver outputs.
         
-        An inverter network can be used to generate a clock by the IC. To this end, connect D6 and D7 through an RC network. The delay will tune the clock frequency.
+        An inverter network can be used to generate a clock by the IC. To this end, connect D6 and D7 through an RC network. The delay will tune the clock frequency."
 
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  
-    Always reset the controller before using it. After a reset, provide a HIGH polarity switch trigger signal on IN0..IN7 or D1..D4 and provide a clock signal on CLK. 
+    "Always reset the controller before using it. After a reset, provide a HIGH polarity switch trigger signal on IN0..IN7 or D1..D4 and provide a clock signal on CLK. 
     The counter output must count down between 3..0 on the clock frequency while the trigger signal is HIGH. Also, OUT4 and OUT6 must be HIGH while the trigger is provided.
 
     Remove the trigger signal. OUT4 must immediately output a LOW.
@@ -95,7 +95,7 @@ documentation:
     Outputs OUT0..OUT3 must be LOW when a LOW->HIGH pulse is provided on D0, triggering an error which is indicated by a HIGH on OUT7. 
     Apply a reset signal to enable the outputs again, and ensure OUT7 is LOW.
 
-    Connect D6 and D7 through an RC network. Verify a self-oscillation is observed at output D7
+    Connect D6 and D7 through an RC network. Verify a self-oscillation is observed at output D7"
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
