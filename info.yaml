@@ -89,7 +89,7 @@ documentation:
     COUNT = 3, polarity A is active. OUT2 = HIGH, OUT3 = LOW  
     COUNT = 2, tracks are disabled.  OUT2 = LOW,  OUT3 = LOW  
     COUNT = 1, polarity B is active. OUT2 = LOW,  OUT3 = HIGH  
-    COUNT = 0, tracks are disabled.  
+    COUNT = 0, tracks are disabled.  OUT2 = LOW,  OUT3 = LOW  
     ```  
       
     Outputs OUT0..OUT3 must be LOW when a LOW->HIGH pulse is provided on D0, triggering an error which is indicated by a HIGH on OUT7.   
